@@ -8,7 +8,7 @@ const HomePage: React.FC = () => {
       <Helmet>
         <title>My MarketPlace</title>
       </Helmet>
-       
+
       <TestDiv />
     </>
   );

@@ -1,9 +1,15 @@
-import HomePage from "./pages/HomePage";
+import { Suspense } from "react";
+import PrivateRoutes from "routes/PrivateRoutes"
+import PublicRoutes from "routes/PublicRoutes"
+
 
 function App() {
   return (
     <>
-      <HomePage />
+      <Suspense fallback={'Loading...'}>
+        <PublicRoutes />
+        <PrivateRoutes />
+      </Suspense>
     </>
   );
 }
