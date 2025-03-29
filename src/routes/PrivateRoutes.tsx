@@ -2,7 +2,7 @@ import React, { lazy } from "react";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { checkPathMatch, paths } from "./helpers";
 
-const AccountSettingsPage = lazy(() => import("pages/AccountSettingsPage"));
+const AccountSettingsPage = lazy(() => import("./pages/AccountSettingsPage"));
 
 const PrivateRoutes: React.FC = () => {
   const location = useLocation();
